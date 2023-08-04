@@ -14,6 +14,20 @@
 		521AB5EA2A782C2B008FEF2B /* QuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521AB5E92A782C2B008FEF2B /* QuizTests.swift */; };
 		521AB5F42A782C2B008FEF2B /* QuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521AB5F32A782C2B008FEF2B /* QuizUITests.swift */; };
 		521AB5F62A782C2B008FEF2B /* QuizUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521AB5F52A782C2B008FEF2B /* QuizUITestsLaunchTests.swift */; };
+		521AB6032A7924BE008FEF2B /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521AB6022A7924BE008FEF2B /* Menu.swift */; };
+		521AB6052A7925A4008FEF2B /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521AB6042A7925A4008FEF2B /* Questions.swift */; };
+		521AB6082A7925C3008FEF2B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521AB6072A7925C3008FEF2B /* Question.swift */; };
+		5288D0542A79484F00C0B0B0 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5288D0532A79484F00C0B0B0 /* GameKit.framework */; };
+		5288D0562A79C5F600C0B0B0 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5288D0552A79C5F600C0B0B0 /* LoadingView.swift */; };
+		52BB3A752A7BE20700D4E338 /* Wiggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB3A742A7BE20700D4E338 /* Wiggle.swift */; };
+		52BB3A772A7BEB3F00D4E338 /* Beat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB3A762A7BEB3F00D4E338 /* Beat.swift */; };
+		52BB3A7A2A7BEC7C00D4E338 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52BB3A792A7BEC7C00D4E338 /* song.mp3 */; };
+		52BB3A7C2A7BECB000D4E338 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB3A7B2A7BECB000D4E338 /* SoundManager.swift */; };
+		52BB3A7E2A7C077400D4E338 /* GameCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB3A7D2A7C077400D4E338 /* GameCenterManager.swift */; };
+		52BB3A832A7C145D00D4E338 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB3A822A7C145D00D4E338 /* LeaderboardView.swift */; };
+		52F4AAAD2A7D30E2009C6934 /* Scenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F4AAAC2A7D30E2009C6934 /* Scenes.swift */; };
+		52F4AAB02A7D314B009C6934 /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F4AAAF2A7D314B009C6934 /* SceneManager.swift */; };
+		52F4AAB22A7D39E4009C6934 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F4AAB12A7D39E4009C6934 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +58,21 @@
 		521AB5EF2A782C2B008FEF2B /* QuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		521AB5F32A782C2B008FEF2B /* QuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizUITests.swift; sourceTree = "<group>"; };
 		521AB5F52A782C2B008FEF2B /* QuizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		521AB6022A7924BE008FEF2B /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		521AB6042A7925A4008FEF2B /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		521AB6072A7925C3008FEF2B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		521AB6092A793B4C008FEF2B /* Quiz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Quiz.entitlements; sourceTree = "<group>"; };
+		5288D0532A79484F00C0B0B0 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		5288D0552A79C5F600C0B0B0 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		52BB3A742A7BE20700D4E338 /* Wiggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wiggle.swift; sourceTree = "<group>"; };
+		52BB3A762A7BEB3F00D4E338 /* Beat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beat.swift; sourceTree = "<group>"; };
+		52BB3A792A7BEC7C00D4E338 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = song.mp3; path = ../../../../../Downloads/song.mp3; sourceTree = "<group>"; };
+		52BB3A7B2A7BECB000D4E338 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		52BB3A7D2A7C077400D4E338 /* GameCenterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterManager.swift; sourceTree = "<group>"; };
+		52BB3A822A7C145D00D4E338 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		52F4AAAC2A7D30E2009C6934 /* Scenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenes.swift; sourceTree = "<group>"; };
+		52F4AAAF2A7D314B009C6934 /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
+		52F4AAB12A7D39E4009C6934 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5288D0542A79484F00C0B0B0 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +108,7 @@
 				521AB5E82A782C2B008FEF2B /* QuizTests */,
 				521AB5F22A782C2B008FEF2B /* QuizUITests */,
 				521AB5D62A782C2A008FEF2B /* Products */,
+				5288D0522A79484E00C0B0B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +125,17 @@
 		521AB5D72A782C2A008FEF2B /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
-				521AB5D82A782C2A008FEF2B /* QuizApp.swift */,
+				52BB3A812A7C144300D4E338 /* App */,
+				52F4AAAE2A7D311E009C6934 /* Enums */,
+				52BB3A802A7C143800D4E338 /* Managers */,
+				52BB3A7F2A7C140200D4E338 /* Modifiers */,
+				52BB3A782A7BEC6E00D4E338 /* Sounds */,
+				521AB6092A793B4C008FEF2B /* Quiz.entitlements */,
 				521AB5DA2A782C2A008FEF2B /* ContentView.swift */,
+				521AB6022A7924BE008FEF2B /* Menu.swift */,
+				5288D0552A79C5F600C0B0B0 /* LoadingView.swift */,
+				52BB3A822A7C145D00D4E338 /* LeaderboardView.swift */,
+				52F4AAB12A7D39E4009C6934 /* MainView.swift */,
 				521AB5DC2A782C2B008FEF2B /* Assets.xcassets */,
 				521AB5DE2A782C2B008FEF2B /* Preview Content */,
 			);
@@ -125,6 +165,67 @@
 				521AB5F52A782C2B008FEF2B /* QuizUITestsLaunchTests.swift */,
 			);
 			path = QuizUITests;
+			sourceTree = "<group>";
+		};
+		521AB6062A7925AE008FEF2B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				521AB6042A7925A4008FEF2B /* Questions.swift */,
+				521AB6072A7925C3008FEF2B /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5288D0522A79484E00C0B0B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5288D0532A79484F00C0B0B0 /* GameKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52BB3A782A7BEC6E00D4E338 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				521AB6062A7925AE008FEF2B /* Models */,
+				52BB3A792A7BEC7C00D4E338 /* song.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		52BB3A7F2A7C140200D4E338 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				52BB3A742A7BE20700D4E338 /* Wiggle.swift */,
+				52BB3A762A7BEB3F00D4E338 /* Beat.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		52BB3A802A7C143800D4E338 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				52F4AAAF2A7D314B009C6934 /* SceneManager.swift */,
+				52BB3A7B2A7BECB000D4E338 /* SoundManager.swift */,
+				52BB3A7D2A7C077400D4E338 /* GameCenterManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		52BB3A812A7C144300D4E338 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				521AB5D82A782C2A008FEF2B /* QuizApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		52F4AAAE2A7D311E009C6934 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				52F4AAAC2A7D30E2009C6934 /* Scenes.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +334,7 @@
 			files = (
 				521AB5E02A782C2B008FEF2B /* Preview Assets.xcassets in Resources */,
 				521AB5DD2A782C2B008FEF2B /* Assets.xcassets in Resources */,
+				52BB3A7A2A7BEC7C00D4E338 /* song.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +359,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521AB6082A7925C3008FEF2B /* Question.swift in Sources */,
+				52F4AAB22A7D39E4009C6934 /* MainView.swift in Sources */,
+				52BB3A772A7BEB3F00D4E338 /* Beat.swift in Sources */,
+				521AB6032A7924BE008FEF2B /* Menu.swift in Sources */,
+				521AB6052A7925A4008FEF2B /* Questions.swift in Sources */,
 				521AB5DB2A782C2A008FEF2B /* ContentView.swift in Sources */,
 				521AB5D92A782C2A008FEF2B /* QuizApp.swift in Sources */,
+				5288D0562A79C5F600C0B0B0 /* LoadingView.swift in Sources */,
+				52BB3A832A7C145D00D4E338 /* LeaderboardView.swift in Sources */,
+				52F4AAAD2A7D30E2009C6934 /* Scenes.swift in Sources */,
+				52BB3A752A7BE20700D4E338 /* Wiggle.swift in Sources */,
+				52BB3A7E2A7C077400D4E338 /* GameCenterManager.swift in Sources */,
+				52F4AAB02A7D314B009C6934 /* SceneManager.swift in Sources */,
+				52BB3A7C2A7BECB000D4E338 /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +528,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Quiz/Quiz.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Quiz/Preview Content\"";
@@ -443,6 +558,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Quiz/Quiz.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Quiz/Preview Content\"";
