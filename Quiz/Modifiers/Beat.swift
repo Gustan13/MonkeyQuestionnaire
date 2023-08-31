@@ -9,11 +9,11 @@ import SwiftUI
 
 struct Beat: ViewModifier {
     @State var isBeating : Bool = true
-    var size : CGFloat
+    var size : CGSize
     
     func body(content: Content) -> some View {
         content
-            .scaleEffect(isBeating ? CGSize(width: 1, height: 1) : CGSize(width: size, height: size))
+            .scaleEffect(isBeating ? CGSize(width: 1, height: 1) : size)
             .onAppear {
                 withAnimation {
                     isBeating = !isBeating
@@ -30,7 +30,7 @@ struct Beat: ViewModifier {
 }
 
 extension View {
-    func beat(to size: CGFloat) -> some View {
+    func beat(to size: CGSize) -> some View {
         modifier(Beat(size: size))
     }
 }

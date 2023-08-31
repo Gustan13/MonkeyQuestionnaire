@@ -12,8 +12,12 @@ struct LoadingView: View {
     @EnvironmentObject var gcmanager : GCManager
     
     var body: some View {
-        VStack {
-            Text("LOADING...")
+        ZStack {
+            Color("BGColor")
+                .ignoresSafeArea()
+            VStack {
+                Text("LOADING...")
+            }
         }
         .task {
             gcmanager.authenticateUser()

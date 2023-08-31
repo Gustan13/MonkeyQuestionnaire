@@ -24,17 +24,18 @@ struct LeaderboardView: View {
                 } label: {
                     HStack {
                         Image(systemName: "chevron.left")
-                        Text("back")
+                        Text("menu")
                     }
                 }
                 Spacer()
             }
-            .padding()
+            .padding(.horizontal)
 
             ScrollView {
                 if entries.count > 0 {
                     ForEach(Range(0...entries.count - 1), id: \.self) { i in
                         let entry = entries[i]
+//                        entry.player.loadPhoto(for: .small)
                         Text("\(entry.rank)º \(entry.player.displayName): \(entry.formattedScore)")
                             .font(.title3)
                             .foregroundColor(.black)
@@ -45,25 +46,24 @@ struct LeaderboardView: View {
                             }
                             .cornerRadius(12)
                             .padding()
+                            .transition(.scale)
                     }
-                } else {
-                    Text("There are no entries")
+                    Text("That's all folks!")
+                        .font(.callout)
+                        .foregroundColor(.black)
                 }
-                Text("That's all folks!")
-                    .font(.callout)
-                    .foregroundColor(.black)
             }
             .frame(maxWidth: .infinity)
             .padding(.horizontal)
             .background {
-                Color.white
+                Color.yellow
                     .opacity(0.5)
             }
             .cornerRadius(20)
             .padding()
         }
         .task {
-            await gcmanager.loadLeaderboard()
+//            await gcmanager.loadLeaderboard()
             entries = await gcmanager.loadEntries()
             print(entries)
         }

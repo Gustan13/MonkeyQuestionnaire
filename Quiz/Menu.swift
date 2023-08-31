@@ -21,66 +21,72 @@ struct Menu: View {
     let localPlayer = GKLocalPlayer.local
     
     var body: some View {
-        VStack {
-            Image("Monkey1")
-                .wiggle(true, 15.0, 0.2)
-                .matchedGeometryEffect(id: "monkey", in: namespace)
+        ZStack {
             
-            Image("Title")
-                .beat(to: CGFloat(0.78))
+            Color("BGColor")
+                .ignoresSafeArea()
             
-            HStack {
-                Image("Monkey2")
-                    .wiggle(false, 10, 0.2)
-                Spacer()
-                Image("Monkey3")
-                    .wiggle(true, 10, 0.2)
-            }
-            .padding(.horizontal)
-            ZStack {
-                Color(uiColor: .lightGray)
-                    .opacity(0.78)
-                    .cornerRadius(20)
-                    .ignoresSafeArea()
-                VStack {
-                    Button {
-                        withAnimation {
-                            sceneManager.currentScene = .game
-                        }
-                    } label: {
-                        Text("Begin")
-                            .bold()
-                            .font(.largeTitle)
-                            .foregroundColor(.black)
-                            .padding()
-                            .frame(width: 225)
-                            .background {
-                                Color.white
-                                    .opacity(0.5)
-                            }
-                            .cornerRadius(12)
+            VStack() {
+                if sceneManager.currentScene == .menu {
+                    HStack {
+                        Image("Vines")
+                            .frame(width: 350)
+                        Spacer()
                     }
-                    Button {
-                        withAnimation {
-                            sceneManager.currentScene = .leaderboards
-                        }
-                    } label: {
-                        Text("Leaderboard")
-                            .bold()
-                            .font(.callout)
-                            .padding(6)
-                            .frame(width: 150)
-                            .background {
-                                Color.white
-                                    .opacity(0.5)
+                    .transition(.move(edge: .top))
+                    .edgesIgnoringSafeArea(.top)
+                    
+                    Image("Sign")
+                        .transition(.scale)
+                        .beat(to: CGSize(width: 0.85, height: 0.85))
+                    
+                    VStack(spacing: 8) {
+                        Button {
+                            withAnimation {
+                                sceneManager.currentScene = .game
                             }
-                            .cornerRadius(8)
+                        } label: {
+                            Text("Begin")
+                                .bold()
+                                .font(.largeTitle)
+                                .foregroundColor(.accentColor)
+                                .frame(width: 225)
+                        }
+                        Button {
+                            withAnimation {
+                                sceneManager.currentScene = .leaderboards
+                            }
+                        } label: {
+                            Text("Leaderboard")
+                                .font(.callout)
+                                .frame(width: 150)
+                        }
                     }
+                    
+                    Spacer()
+                    
+                    Image("UltraPile")
+                        .resizable()
+                        .scaledToFill()
+                        .edgesIgnoringSafeArea(.bottom)
+                } else if sceneManager.currentScene == .game {
+                    ContentView(points: $score)
+                        .transition(.scale)
+                } else if sceneManager.currentScene == .leaderboards {
+                    LeaderboardView()
+                        .transition(.scale)
+                } else if sceneManager.currentScene == .end {
+                    EndScreen(points: score)
+                        .transition(.asymmetric(insertion: .identity, removal: .slide))
                 }
+                
             }
-            .task {
-                await gcmanager.loadLeaderboard()
-            }
+        }
+        .task {
+            await gcmanager.loadLeaderboard()
+        }
+        .onAppear {
+            SoundManager.playSound("song", type: "mp3", loops: 100)
         }
     }
 }

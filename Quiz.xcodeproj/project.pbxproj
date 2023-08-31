@@ -27,7 +27,8 @@
 		52BB3A832A7C145D00D4E338 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB3A822A7C145D00D4E338 /* LeaderboardView.swift */; };
 		52F4AAAD2A7D30E2009C6934 /* Scenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F4AAAC2A7D30E2009C6934 /* Scenes.swift */; };
 		52F4AAB02A7D314B009C6934 /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F4AAAF2A7D314B009C6934 /* SceneManager.swift */; };
-		52F4AAB22A7D39E4009C6934 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F4AAB12A7D39E4009C6934 /* MainView.swift */; };
+		52F4AAB42A80C9D7009C6934 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F4AAB32A80C9D7009C6934 /* Mood.swift */; };
+		52F4AAB62A80CCB2009C6934 /* EndScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F4AAB52A80CCB2009C6934 /* EndScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +73,8 @@
 		52BB3A822A7C145D00D4E338 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 		52F4AAAC2A7D30E2009C6934 /* Scenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenes.swift; sourceTree = "<group>"; };
 		52F4AAAF2A7D314B009C6934 /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
-		52F4AAB12A7D39E4009C6934 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		52F4AAB32A80C9D7009C6934 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		52F4AAB52A80CCB2009C6934 /* EndScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				52BB3A812A7C144300D4E338 /* App */,
 				52F4AAAE2A7D311E009C6934 /* Enums */,
 				52BB3A802A7C143800D4E338 /* Managers */,
+				521AB6062A7925AE008FEF2B /* Models */,
 				52BB3A7F2A7C140200D4E338 /* Modifiers */,
 				52BB3A782A7BEC6E00D4E338 /* Sounds */,
 				521AB6092A793B4C008FEF2B /* Quiz.entitlements */,
@@ -135,7 +138,7 @@
 				521AB6022A7924BE008FEF2B /* Menu.swift */,
 				5288D0552A79C5F600C0B0B0 /* LoadingView.swift */,
 				52BB3A822A7C145D00D4E338 /* LeaderboardView.swift */,
-				52F4AAB12A7D39E4009C6934 /* MainView.swift */,
+				52F4AAB52A80CCB2009C6934 /* EndScreen.swift */,
 				521AB5DC2A782C2B008FEF2B /* Assets.xcassets */,
 				521AB5DE2A782C2B008FEF2B /* Preview Content */,
 			);
@@ -187,7 +190,6 @@
 		52BB3A782A7BEC6E00D4E338 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				521AB6062A7925AE008FEF2B /* Models */,
 				52BB3A792A7BEC7C00D4E338 /* song.mp3 */,
 			);
 			path = Sounds;
@@ -224,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				52F4AAAC2A7D30E2009C6934 /* Scenes.swift */,
+				52F4AAB32A80C9D7009C6934 /* Mood.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -360,7 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				521AB6082A7925C3008FEF2B /* Question.swift in Sources */,
-				52F4AAB22A7D39E4009C6934 /* MainView.swift in Sources */,
+				52F4AAB62A80CCB2009C6934 /* EndScreen.swift in Sources */,
 				52BB3A772A7BEB3F00D4E338 /* Beat.swift in Sources */,
 				521AB6032A7924BE008FEF2B /* Menu.swift in Sources */,
 				521AB6052A7925A4008FEF2B /* Questions.swift in Sources */,
@@ -369,6 +372,7 @@
 				5288D0562A79C5F600C0B0B0 /* LoadingView.swift in Sources */,
 				52BB3A832A7C145D00D4E338 /* LeaderboardView.swift in Sources */,
 				52F4AAAD2A7D30E2009C6934 /* Scenes.swift in Sources */,
+				52F4AAB42A80C9D7009C6934 /* Mood.swift in Sources */,
 				52BB3A752A7BE20700D4E338 /* Wiggle.swift in Sources */,
 				52BB3A7E2A7C077400D4E338 /* GameCenterManager.swift in Sources */,
 				52F4AAB02A7D314B009C6934 /* SceneManager.swift in Sources */,

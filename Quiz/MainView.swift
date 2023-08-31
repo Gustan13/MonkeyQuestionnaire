@@ -16,8 +16,7 @@ struct MainView: View {
     
     var body: some View {
         ZStack {
-            Image("Background")
-                .resizable()
+            Color("BGColor")
                 .ignoresSafeArea()
             
             switch (sceneManager.currentScene) {
@@ -26,15 +25,16 @@ struct MainView: View {
                 Menu()
                     .transition(.opacity)
                     .environmentObject(sceneManager)
-                    .matchedGeometryEffect(id: "scene", in: namespace)
+//                    .matchedGeometryEffect(id: "scene", in: namespace)
             case .game:
                 ContentView()
                     .environmentObject(sceneManager)
-                    .matchedGeometryEffect(id: "scene", in: namespace)
+//                    .matchedGeometryEffect(id: "scene", in: namespace)
             case .leaderboards:
                 LeaderboardView()
+                    .transition(.opacity)
                     .environmentObject(sceneManager)
-                    .matchedGeometryEffect(id: "scene", in: namespace)
+//                    .matchedGeometryEffect(id: "scene", in: namespace)
             }
         }
         .onAppear {

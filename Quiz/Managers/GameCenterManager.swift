@@ -59,4 +59,18 @@ class GCManager : ObservableObject {
         }
         return entries
     }
+    
+    func loadLpEntry() async -> GKLeaderboard.Entry {
+        var entry : GKLeaderboard.Entry?
+        
+        await loadLeaderboard()
+        do {
+            let allPlayers = try await leaderboard.loadEntries(for: .global, timeScope: .allTime, range: NSRange(1...50))
+            entry = allPlayers.0
+            
+        } catch {
+            print(error.localizedDescription)
+        }
+        return entry!
+    }
 }

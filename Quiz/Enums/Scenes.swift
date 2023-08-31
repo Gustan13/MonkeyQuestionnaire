@@ -6,5 +6,5 @@
 //
 
 enum Scenes {
-    case menu, game, leaderboards
+    case menu, game, leaderboards, end
 }
